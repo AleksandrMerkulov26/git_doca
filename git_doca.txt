@@ -1,0 +1,52 @@
+Конфигурация файла .gitconfig
+
+Добавление почты и имени.
+
+git config --global user.name "AleksandrMerkulov26"
+git config --global user.email "Alexandermerkulov0071994@yandex.ru"
+
+git config -l - просмотр конфигурационного файла.
+
+
+git init . - создание БД в дир.
+
+git status - просмотр в каком состоянии находятся файлы.
+
+Красные-Новые файла, или без коммитов.
+Зеленые- создан коммит, сделать снимок.
+
+git add 'Name file' - добавление файла для коммита
+
+git commit -m ''Name commit'' - создание коммита, для файла.
+
+git log - просмотр всех созданных коммитов.
+
+git log -1 - просмотр последнего коммита.
+
+git log -1 -p -просмотр, разницы что было в прошлом коммите.
+
+git checkout -- 'name file' - убрать новые изменения в файле.
+
+git diff --staged - предпросмотр, что у нас будет записано в commit
+
+.gitignore - игнорирует файлы и директории, которые записаны в данном файле.
+
+Подключение по ssh.
+
+ssh-keygen
+
+pub.key добавляем на сайт git в личный профиль.
+
+Переходи в терминал вводим
+ssh-add ~/.ssh/git - добавление ssh ключа.
+Если появилась ошибка 'Could not open a connection to your authentication agent.'
+Нужно запустить агента.
+eval `ssh-agent -s`
+Потом еще раз добавляем наш ключ.
+ssh-add ~/.ssh/git
+Identity added: /c/Users/User/.ssh/git (user@DESKTOP-6EP3B5A)
+
+git clone 'Remote repo' -копирование удаленного репозитория.
+
+
+ВАЖНО ЕСЛИ РЕПОЗИТОРИИ ЗАГРУЖАЛСЯ ПО HTTPS,чтобы изменить на ssh - git remote ser -url origin
