@@ -45,8 +45,30 @@ eval `ssh-agent -s`
 Потом еще раз добавляем наш ключ.
 ssh-add ~/.ssh/git
 Identity added: /c/Users/User/.ssh/git (user@DESKTOP-6EP3B5A)
+git clone 'Remote repo' - копирование удаленного репозитория.
 
-git clone 'Remote repo' -копирование удаленного репозитория.
+
+ВАЖНО ЕСЛИ РЕПОЗИТОРИИ ЗАГРУЖАЛСЯ ПО HTTPS, чтобы изменить на ssh - git remote ser -url origin
 
 
-ВАЖНО ЕСЛИ РЕПОЗИТОРИИ ЗАГРУЖАЛСЯ ПО HTTPS,чтобы изменить на ssh - git remote ser -url origin
+                                                                                       branch - ветка.
+
+MASTER branch - ОСНОВНАЯ ВЕТКА (золотая копия)
+Всегда создается новая ветка, и если все хорошо, происходит слияние.
+
+git branch - показывает ветки
+
+git branch 'name_branch' - создание ветки, но не переход на ветку.
+
+git checkout 'name_branch' - переход на созданную ветку.
+
+git checkout -b 'name_branch' - создание новой ветки и переход на нее.
+
+git branch -d 'name_branch' - удаление ветки.
+
+
+                                                                                      Для слияния веток.
+
+Нужно перейти на главную ветку или на ту ветку, с которой хотите произвести слияние и ввести
+
+git merge ‘ветку, которую хотите слить'
