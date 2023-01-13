@@ -1,8 +1,8 @@
 Конфигурация файла .gitconfig
 
 Добавление почты и имени.
-git config --global user.name "AleksandrMerkulov26"
-git config --global user.email "Alexandermerkulov0071994@yandex.ru"
+git config --global user.name 
+git config --global user.email 
 
 
 git config -l - просмотр конфигурационного файла.
